@@ -20,6 +20,10 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
+        //
+
+
+        //
         recyclerView = findViewById(R.id.recycleView);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
