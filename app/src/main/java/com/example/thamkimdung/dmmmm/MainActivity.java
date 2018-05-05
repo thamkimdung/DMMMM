@@ -4,52 +4,37 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.widget.Button;
 
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+import com.squareup.moshi.Types;
+
+import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 public class MainActivity extends Activity {
-    private RecyclerView recyclerView;
-    private ArrayList<Person> personArrayList;
-    private DataAdapter dataAdapter;
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         init();
     }
 
     private void init() {
-        //
-
-
-        //
-        recyclerView = findViewById(R.id.recycleView);
-        recyclerView.setHasFixedSize(true);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        personArrayList = new ArrayList<>();
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        personArrayList.add(new Person("dung",22));
-        dataAdapter = new DataAdapter(personArrayList,getApplicationContext());
-        recyclerView.setAdapter(dataAdapter);
 
 
     }

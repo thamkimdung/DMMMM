@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.thamkimdung.dmmmm.MainActivity">
 
-<android.support.v7.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:id="@+id/recycleView"
-    android:layout_height="match_parent">
-
-</android.support.v7.widget.RecyclerView>
+<Button
+    android:layout_width="wrap_content"
+    style="@style/CustomBtn"
+    android:text="button"
+    android:textSize="30sp"
+    android:layout_gravity="center"
+    android:id="@+id/btn"
+    android:layout_height="wrap_content" />
 
 </LinearLayout>
