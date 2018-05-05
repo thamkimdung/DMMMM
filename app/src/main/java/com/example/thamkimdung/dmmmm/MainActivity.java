@@ -41,4 +41,6 @@ ondelete();
     }
 private void ondelete(){
 }
+    private void ondelete2(){
+}
 }
