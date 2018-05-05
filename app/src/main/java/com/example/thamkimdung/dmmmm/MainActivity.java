@@ -35,7 +35,10 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
-
+//say
+ondelete();
 
     }
+private void ondelete(){
+}
 }
